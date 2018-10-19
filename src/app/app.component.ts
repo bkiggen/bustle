@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Article } from './models/article.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bustle-clone';
+  title = 'Rustle';
+
+  
+
 }
