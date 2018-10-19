@@ -1,3 +1,14 @@
-<p>
-  horizontal-articles works!
-</p>
+<div class="container">
+  <div class="sub-container">
+    <div *ngFor="let currentArticle of childArticleList" class="article">
+      <div class="image">
+        <img src="{{currentArticle.articleImageURL}}" alt="">
+      </div>
+      <div class="text">
+        <h3>{{currentArticle.articleTitle}}</h3>
+        <h5>By: {{currentArticle.articleAuthor}}</h5>
+      </div>
+    </div>
+  </div>
+
+</div>
