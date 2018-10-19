@@ -9,6 +9,9 @@ import { Article } from './models/article.model';
 export class AppComponent {
   title = 'Bustle';
 
+  toggleMenu() {
+    console.log(this);
+  }
 
   masterArticleList: Article[] = [
     new Article("11 Easy Halloween Costumes You Can Wear with a Parka", "I thought today we would make a happy little stream that's just running through the woods here. We spend so much of our life looking - but never seeing. At home you have unlimited time. Volunteering your time; it pays you and your whole community fantastic dividends. Little trees and bushes grow however makes them happy.", "https://amp.thisisinsider.com/images/5a5fc07a55ac562f008b46b2-750-563.jpg", "Delice Florice"),
@@ -29,6 +32,10 @@ export class AppComponent {
             new Article("Let Me Paint You a Picture of my 25 Minutes with Edward the Confessor (Spoiler: He Spilled the Beans)", "This is your world, whatever makes you happy you can put in it. Go crazy. You have freedom here. The only guide is your heart. Be careful. You can always add more - but you can't take it away. Now we'll take the almighty fan brush. With something so strong, a little bit can go a long way. Painting should do one thing. It should put happiness in your heart.", "https://www.thefamouspeople.com/profiles/images/og-edward-the-confessor-37295.jpg", "Devin Efree"), new Article("11 Easy Halloween Costumes You Can Wear with a Parka", "I thought today we would make a happy little stream that's just running through the woods here. We spend so much of our life looking - but never seeing. At home you have unlimited time. Volunteering your time; it pays you and your whole community fantastic dividends. Little trees and bushes grow however makes them happy.", "https://amp.thisisinsider.com/images/5a5fc07a55ac562f008b46b2-750-563.jpg", "Delice Florice"),
             new Article("Here's the Difference Between Your Zodiac Sign and Reality", "You gotta think like a tree. Let's put some happy trees and bushes back in here. Just take out whatever you don't want. It'll change your entire perspective. Everyone needs a friend. Friends are the most valuable things in the world.", "https://imgix.bustle.com/uploads/image/2018/10/11/c64337dd-9407-4caa-bb70-235d0483960c-fotolia_226315560_subscription_monthly_m.jpg?w=282&h=190&fit=crop&crop=faces&auto=format&q=70&dpr=2", "Jerri DeLonge")
   ]
-
-
+  featuredArticleList: Article[] = [
+    new Article("Lady Gaga Has Been a Toy Car All Year & Almost No One Noticed", "", "https://imgix.bustle.com/uploads/getty/2018/10/16/68a03435-4f6c-433b-8305-becde8bdc962-getty-1041965092.jpg?w=400&h=209&fit=crop&crop=faces&auto=format&q=70&dpr=2", "Desiree Geartonst")
+  ]
+  exclusiveArticleList: Article[] = [
+    new Article("11 Halloween Makeup Tutorials Using Only Household Cleaners", "", "https://imgix.bustle.com/uploads/image/2018/10/18/813194c5-2e26-4c4b-b1ac-f701f13e641f-1.jpg?w=282&h=190&fit=crop&crop=faces&auto=format&q=70&dpr=2", "Michaelangelo Dorff"), new Article("We Need to Talk About Onside Kicks: Who Needs The Stress?", "", "https://imgix.bustle.com/uploads/getty/2018/10/17/4b3e4bf2-8290-4fb8-8535-23148d9b31a2-getty-1025377014.jpg?w=282&h=190&fit=crop&crop=faces&auto=format&q=70&dpr=2", "Keefer Baritone Treat"), new Article("I Tracked My Screen Time For A Week & It Taught Me A Lot About FarmVille", "", "https://imgix.bustle.com/uploads/image/2018/10/10/96f9e458-1f31-414d-9dfd-f52a1db6f978-shutterstock_9408624a.jpg?w=282&h=190&fit=crop&crop=faces&auto=format&q=70&dpr=2", "Persia Peerless"), new Article("Lana Condor Literally Loves Being On TV - Literally", "", "https://imgix.bustle.com/uploads/image/2018/8/20/a8542af0-a337-430a-96d1-c2ad5e2c2902-_header-lanacondor.jpg?w=282&h=190&fit=crop&crop=faces&auto=format&q=70&dpr=2", "Donnie Wahlberg")
+  ]
 }

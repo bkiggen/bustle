@@ -1,6 +1,6 @@
-<app-header></app-header>
+<app-header (clickSender)="toggleMenu($event)"></app-header>
 <app-horizontal-articles [childArticleList]="masterArticleList"></app-horizontal-articles>
-<app-feature-article [childArticleList]="masterArticleList"></app-feature-article>
+<app-feature-article [childArticleList]="featuredArticleList"></app-feature-article>
 <div class="exclusiveLine">
   <div class="text">
     <h1>Bustle Exclusives</h1>
@@ -9,6 +9,6 @@
 
   </div>
 </div>
-<app-horizontal-articles [childArticleList]="masterArticleList"></app-horizontal-articles>
+<app-horizontal-articles [childArticleList]="exclusiveArticleList"></app-horizontal-articles>
 <!-- <app-exclusive-article [childArticleList]="masterArticleList"></app-exclusive-article> -->
 <app-standard-article [childArticleList]="masterArticleList"></app-standard-article>
