@@ -1,12 +1,21 @@
-<app-header (clickSender)="toggleMenu($event)" [childShow]="show"></app-header>
-<app-horizontal-articles [childArticleList]="masterArticleList"></app-horizontal-articles>
-<app-feature-article [childArticleList]="featuredArticleList"></app-feature-article>
-<div class="exclusiveLine">
-  <div class="text">
-    <h1>Bustle Exclusives</h1>
-  </div>
-  <div class="line">
-  </div>
-</div>
-<app-horizontal-articles [childArticleList]="exclusiveArticleList"></app-horizontal-articles>
-<app-standard-article [childArticleList]="masterArticleList"></app-standard-article>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bustle</title>
+  </head>
+  <body>
+    <app-header (clickSender)="toggleMenu($event)" [childShow]="show"></app-header>
+    <app-horizontal-articles [childArticleList]="masterArticleList"></app-horizontal-articles>
+    <app-feature-article [childArticleList]="featuredArticleList"></app-feature-article>
+    <div class="exclusiveLine">
+      <div class="text">
+        <h1>Bustle Exclusives</h1>
+      </div>
+      <div class="line">
+      </div>
+    </div>
+    <app-horizontal-articles [childArticleList]="exclusiveArticleList"></app-horizontal-articles>
+    <app-standard-article [childArticleList]="masterArticleList"></app-standard-article>
+  </body>
+</html>
