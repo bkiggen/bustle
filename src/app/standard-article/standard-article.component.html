@@ -1,3 +1,14 @@
-<p>
-  standard-article works!
-</p>
+<div class="container">
+
+    <div *ngFor="let currentArticle of childArticleList" class="article">
+      <div class="image">
+        <img src="{{currentArticle.articleImageURL}}" alt="">
+      </div>
+      <div class="text">
+        <h3>{{currentArticle.articleTitle}}</h3>
+        <p>{{currentArticle.articleDescription}}</p>
+        <h5>By: {{currentArticle.articleAuthor}}</h5>
+      </div>
+    </div>
+
+</div>

@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { HorizontalArticlesComponent } from './horizontal-articles/horizontal-articles.component';
 import { FeatureArticleComponent } from './feature-article/feature-article.component';
 import { StandardArticleComponent } from './standard-article/standard-article.component';
+import { ExclusiveArticleComponent } from './exclusive-article/exclusive-article.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { StandardArticleComponent } from './standard-article/standard-article.co
     HeaderComponent,
     HorizontalArticlesComponent,
     FeatureArticleComponent,
-    StandardArticleComponent
+    StandardArticleComponent,
+    ExclusiveArticleComponent
   ],
   imports: [
     BrowserModule

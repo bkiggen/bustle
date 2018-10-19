@@ -1,0 +1,37 @@
+.container {
+  width: 75%;
+  height: 400px;
+}
+
+.article {
+  margin: 10px;
+}
+
+.image {
+  width: 280px;
+  height: 190px;
+}
+
+img {
+  width: 745px;
+  height: 435px;
+}
+
+.text {
+  width: 250px;
+  text-align: center;
+  background-color: white;
+  transform: translateY(-40px);
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+.text h3 {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.text h5 {
+  text-transform: uppercase;
+}
