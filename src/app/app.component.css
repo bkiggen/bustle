@@ -1,0 +1,16 @@
+.exclusiveLine {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.text {
+  width: 30%;
+  margin-left: 20px;
+}
+
+.line {
+  border-bottom: 2px solid grey;
+  transform: translateY(-35px);
+  width: 70%;
+}

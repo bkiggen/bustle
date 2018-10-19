@@ -7,7 +7,7 @@ import { Article } from './models/article.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Rustle';
+  title = 'Bustle';
 
 
   masterArticleList: Article[] = [
