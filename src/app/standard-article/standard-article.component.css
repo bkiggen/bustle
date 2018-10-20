@@ -1,8 +1,9 @@
 .container {
   width: 75%;
   margin: 0 auto;
-}
+  font-weight: lighter;
 
+}
 
 img {
   height: 245px;
@@ -13,4 +14,11 @@ img {
 .article {
   display: flex;
   height: 265px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .article p {
+    display: none;
+  }
 }
