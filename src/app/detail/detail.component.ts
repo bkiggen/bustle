@@ -16,10 +16,13 @@ export class DetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private location: Location, private articleService: ArticleService) { }
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-      this.articleId = parseInt(urlParameters['id']);
+    this.route.params.forEach((urlParametersArray) => {
+      this.articleId = parseInt(urlParametersArray['id']);
     });
-    this.articleToDisplay = this.articleService.getArticleById(this.articleId);
+
+    this.articleService.getArticleById(this.articleId).subscribe(dataLastEmittedFromObserver => {
+      this.articleToDisplay = new Article(dataLastEmittedFromObserver.articleTitle, dataLastEmittedFromObserver.articleDescription, dataLastEmittedFromObserver.articleImageURL, dataLastEmittedFromObserver.articleAuthor, dataLastEmittedFromObserver.articleId);
+    });
   }
 
 }

@@ -12,10 +12,10 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./standard-article.component.css'],
   providers: [ArticleService]
 })
+
 export class StandardArticleComponent implements OnInit {
   articles: FirebaseListObservable<any[]>;
 
-  @Input() childArticleList: Article[];
   constructor(private router: Router, private articleService: ArticleService) { }
 
   ngOnInit() {
