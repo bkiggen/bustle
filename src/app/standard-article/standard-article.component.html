@@ -1,6 +1,6 @@
 <div class="container">
 
-    <div *ngFor="let currentArticle of childArticleList" class="article" (click)="goToDetailPage(currentArticle)">
+    <div *ngFor="let article of articles | async" class="article" (click)="goToDetailPage(article)">
       <div class="image">
         <img src="{{currentArticle.articleImageURL}}" alt="">
       </div>
