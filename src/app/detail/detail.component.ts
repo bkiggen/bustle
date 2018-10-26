@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Article } from '../article.model';
+import { Article } from '../models/article.model';
 import { ArticleService } from '../article.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { ArticleService } from '../article.service';
   providers: [ArticleService]
 })
 export class DetailComponent implements OnInit {
-  articleId: number;
+  articleId: number = null;
   articleToDisplay: Article;
   constructor(private route: ActivatedRoute, private location: Location, private articleService: ArticleService) { }
 
