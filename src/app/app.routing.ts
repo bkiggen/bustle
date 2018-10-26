@@ -8,7 +8,6 @@ const appRoutes: Routes = [
     path: '',
     component: SplashComponent
   }
-  // ,
   // {
   //   path: '/detail:id',
   //   component: DetailComponent
