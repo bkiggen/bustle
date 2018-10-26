@@ -7,6 +7,10 @@ import { HorizontalArticlesComponent } from './horizontal-articles/horizontal-ar
 import { FeatureArticleComponent } from './feature-article/feature-article.component';
 import { StandardArticleComponent } from './standard-article/standard-article.component';
 import { ExclusiveArticleComponent } from './exclusive-article/exclusive-article.component';
+import { SplashComponent } from './splash/splash.component';
+import { routing } from './app.routing';
+import { DetailComponent } from './detail/detail.component';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +19,13 @@ import { ExclusiveArticleComponent } from './exclusive-article/exclusive-article
     HorizontalArticlesComponent,
     FeatureArticleComponent,
     StandardArticleComponent,
-    ExclusiveArticleComponent
+    ExclusiveArticleComponent,
+    SplashComponent,
+    DetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
