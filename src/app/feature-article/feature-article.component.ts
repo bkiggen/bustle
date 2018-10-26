@@ -13,12 +13,13 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class FeatureArticleComponent implements OnInit {
   articles: FirebaseListObservable<any[]>;
-  // currentRoute: string = this.route.url;
+  articleTest: Article[];
 
   constructor(private articleService: ArticleService, private router: Router) { }
 
   ngOnInit() {
     this.articles = this.articleService.getArticles();
+    this.articleTest = this.articles[0];
   }
 
   goToDetailPage(clickedArticle) {
