@@ -16,20 +16,20 @@ export class ArticleService {
     return this.articles;
   }
 
-  addarticle(newarticle: article) {
-  this.articles.push(newarticle);
+  addArticle(newArticle: Article) {
+  this.articles.push(newArticle);
 }
 
-  updatearticle(localUpdatedarticle) {
-    var articleEntryInFirebase = this.getarticleById(localUpdatedarticle.$key);
-    articleEntryInFirebase.update({articleTitle: localUpdatedarticle.articleTitle, articleDescription: localUpdatedarticle.articleDescription, articleImageURL: localUpdatedarticle.articleImageURL, articleAuthor: localUpdatedarticle.articleAuthor, articleId: localUpdatedarticle.articleId });
+  updatearticle(localUpdatedArticle) {
+    var articleEntryInFirebase = this.getArticleById(localUpdatedArticle.$key);
+    articleEntryInFirebase.update({articleTitle: localUpdatedArticle.articleTitle, articleDescription: localUpdatedArticle.articleDescription, articleImageURL: localUpdatedArticle.articleImageURL, articleAuthor: localUpdatedArticle.articleAuthor, articleId: localUpdatedArticle.articleId });
   }
 
   getArticleById(articleId: number) {
     return this.database.object('articles/' + articleId);
   }
-  deletearticle(localarticleToDelete) {
-  var articleEntryInFirebase = this.getarticleById(localarticleToDelete.$key);
+  deletearticle(localArticleToDelete) {
+  var articleEntryInFirebase = this.getArticleById(localArticleToDelete.$key);
   articleEntryInFirebase.remove();
 }
 }
