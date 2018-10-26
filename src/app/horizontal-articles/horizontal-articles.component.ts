@@ -8,7 +8,9 @@ import { Article } from '../models/article.model';
 })
 export class HorizontalArticlesComponent implements OnInit {
   @Input() childArticleList: Article[];
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

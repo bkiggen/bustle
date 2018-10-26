@@ -9,7 +9,15 @@ export class ArticleService {
 
   constructor() { }
 
-  get() {
-    return
+  getStandardArticles() {
+    return standardArticleList;
+  }
+
+  getArticleById(articleId: number) {
+    for (var i = 0; i <= ARTICLES.length - 1; i++){
+      if (ARTICLES[i].id === albumId){
+        return ARTICLES[i];
+      }
+    }
   }
 }

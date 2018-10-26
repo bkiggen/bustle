@@ -10,7 +10,6 @@ import { Article } from './models/article.model';
 export class AppComponent {
   title = 'Bustle';
   show: boolean = false;
-
   toggleMenu() {
     if(this.show === true){
       this.show = false;
