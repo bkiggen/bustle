@@ -1,8 +1,9 @@
 .container {
   width: 75%;
-  height: 400px;
+  height: 500px;
   margin: 0 auto;
   margin-bottom: 125px;
+  overflow: hidden;
 }
 
 .article {
@@ -14,7 +15,7 @@
 }
 
 img {
-  width: 745px;
+  width: 725px;
   height: 435px;
 }
 
