@@ -11,8 +11,9 @@ import { ArticleService } from '../article.service';
   providers: [ArticleService]
 })
 export class DetailComponent implements OnInit {
-  articleId: number = null;
+  articleId: number;
   articleToDisplay: Article;
+
   constructor(private route: ActivatedRoute, private location: Location, private articleService: ArticleService) { }
 
   ngOnInit() {
